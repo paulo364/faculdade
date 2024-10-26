@@ -74,6 +74,11 @@ Logo em seguida use o comando `supabase link` e selecione o banco de dados do pr
   supabase link 
 ```
 
+**Gere a Migração do Esquema Inicial**: Use o comando abaixo para criar a migração a partir do esquema inicial:
+
+   ```bash
+   npx supabase db diff --use-migra -f initial_schema
+
 
 
 
