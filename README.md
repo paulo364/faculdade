@@ -74,22 +74,22 @@ Logo em seguida use o comando `supabase link` e selecione o banco de dados do pr
   supabase link 
 ```
 
-Use o comando abaixo para criar a migração a partir do esquema inicial:
+Para criar uma migração a partir do esquema atual do banco de dados remoto, você pode usar o seguinte comando:
 
 ```bash
-   npx supabase db diff --use-migra -f initial_schema
+supabase db pull
 ```
 
-Para aplicar a nova migração, execute o seguinte comando:
+para aplicar as migrações (caso você tenha alterações que não estejam no banco de dados remoto), use o seguinte comando:
 
 ```bash
-npx supabase db push
+supabase db push
 ```
 
 Após a aplicação, execute o seguinte comando para confirmar se a migração foi bem-sucedida:
 
 ```bash
-npx supabase migrations list
+supabase migrations list
 ```
 
 
