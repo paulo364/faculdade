@@ -50,43 +50,43 @@ Para mais orientações, veja esse [repositório](https://github.com/fabrica-bay
 ```
 ## Congigure o Supabase CLI
 
-**Instale o supabase cli na pasta do seu projeto usando o comando:
+Instale o supabase cli na pasta do seu projeto usando o comando:
 
 ```bash
   supabase init
 ```
 
-**Após instalar o supabase cli na pasta do seu projeto use o comando `supabase start` para iniciar o supabase local
+Após instalar o supabase cli na pasta do seu projeto use o comando `supabase start` para iniciar o supabase local
 
 ```bash
   supabase start
 ```
 
-**Obs: quando quiser para o supabase use o comando:
+Obs: quando quiser para o supabase use o comando:
 
 ```bash
   supabase stop
 ```
 
-**Logo em seguida use o comando `supabase link` e selecione o banco de dados do projeto e digite a senha correta para fazer a migração para local.
+Logo em seguida use o comando `supabase link` e selecione o banco de dados do projeto e digite a senha correta para fazer a migração para local.
 
 ```bash
   supabase link 
 ```
 
-**Gere a Migração do Esquema Inicial**: Use o comando abaixo para criar a migração a partir do esquema inicial:
+Use o comando abaixo para criar a migração a partir do esquema inicial:
 
 ```bash
    npx supabase db diff --use-migra -f initial_schema
 ```
 
-**Para aplicar a nova migração, execute o seguinte comando:
+Para aplicar a nova migração, execute o seguinte comando:
 
 ```bash
 npx supabase db push
 ```
 
-**Após a aplicação, execute o seguinte comando para confirmar se a migração foi bem-sucedida:
+Após a aplicação, execute o seguinte comando para confirmar se a migração foi bem-sucedida:
 
 ```bash
 npx supabase migrations list
