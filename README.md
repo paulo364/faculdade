@@ -80,7 +80,13 @@ Para criar uma migração a partir do esquema atual do banco de dados remoto, vo
 supabase db pull
 ```
 
-para aplicar as migrações (caso você tenha alterações que não estejam no banco de dados remoto), use o seguinte comando:
+Para aplicar as migrações, use o seguinte comando:
+
+```
+supabase migration up
+```
+
+Caso você tenha alterações que não estejam no banco de dados remoto, use o seguinte comando:
 
 ```bash
 supabase db push
@@ -91,8 +97,6 @@ Após a aplicação, execute o seguinte comando para confirmar se a migração f
 ```bash
 supabase migrations list
 ```
-
-
 
 
 ### Configure as variáveis de ambiente
