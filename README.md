@@ -48,7 +48,7 @@ Para mais orientações, veja esse [repositório](https://github.com/fabrica-bay
 ```bash
   npm install
 ```
-## Congigure o Supabase CLI
+## Configuração o Supabase CLI
 
 ### Instale o supabase cli na pasta do seu projeto usando o comando:
 
